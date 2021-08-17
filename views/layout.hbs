@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--icono del sitio-->
+  <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico" />
+  <!--estilos letras-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+  <!--borrar estilos predeterminados-->
+  <link rel="stylesheet" href="stylesheets/normalize.css">
+  <!--hoja de estilos-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="stylesheets/estilos.css">
+  <!--animaciones AOS-->
+  <!--iconos-->
+  <script src="https://kit.fontawesome.com/6cdd219a42.js" crossorigin="anonymous"></script>
+
+  <title>{{titulo}}</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/{{logo}}" alt="logo de {{alt}}" width="350">
+    </div>
+    <div class="sesion">
+      <i class="fas fa-hospital-user fa-2x icono"></i>
+      <button id="boton" class="boton"><i class="fas fa-sort-down icono" title="opciones"></i></button>
+      <div class="opciones" id="opciones">
+        <ul>
+          <li><a href="/sesionPaciente">Paciente</a></li>
+          <li><a href="/sesionMedico">Personal Médico</a></li>
+          <li><a href="/sesionAdministrativo">Personal Administrativo</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="{{rutaitem1}}" class="{{#if isItem1}}activo{{/if}}"><i class="fas fa-{{iconoitem1}}"></i>
+          {{item1}}</a></li>
+      <li><a href="{{rutaitem2}}" class="{{#if isItem2}}activo{{/if}}"><i
+            class="fas fa-{{iconoitem2}}"></i>{{item2}}</a></li>
+      <li><a href="{{rutaitem3}}" class="{{#if isItem3}}activo{{/if}}"><i class="far fa-{{iconoitem3}}"></i>
+          {{item3}}</a></li>
+      <li><a href="{{rutaitem4}}" class="{{#if isItem4}}activo{{/if}}"><i class="fas fa-{{iconoitem4}}"></i>
+          {{item4}}</a></li>
+
+    </ul>
+  </nav>
+
+  {{{body}}}
+  <footer>
+    <a href="otros/terminosCondiciones.pdf" target="_blank">Términos y Condiciones</a> | <a
+      href="https://mail.google.com/mail/?view=cm&fs=1&to=archilagraciela@gmail.com" target="_blank">Diseñado por:
+      Graciela Archila</a>
+  </footer>
+  <script src="javascripts/script.js"></script>
+
+</body>
+
+</html>

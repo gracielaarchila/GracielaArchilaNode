@@ -1,0 +1,522 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+/*css de inicio */
+nav{
+    background-color: rgb(31, 78, 121);
+    color:rgb(140, 170, 197);
+    clear: both;
+    z-index: 1;
+    position: relative;
+}
+nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    list-style: none;
+    width: 20%;
+    padding: 5px;
+}
+nav ul li a{
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+}
+nav ul li a:hover,
+.acordiones:hover,
+.opciones ul li a:hover{
+    color: rgb(31, 78, 121);
+    background-color: rgb(140, 170, 197);
+    border-radius: 5px;
+}
+.activo{
+    color: rgb(31, 78, 121);
+    background-color: rgb(140, 170, 197); 
+    border-radius: 5px;
+}
+header{
+    margin: 30px;
+
+}
+.logo{
+    float: left;
+}
+.sesion{
+    position: absolute;
+    right: 0; 
+    z-index: 3;
+
+}
+.icono{
+    color: rgb(31, 78, 121); 
+}
+.main{
+    padding: 30px;
+    width: 80%;
+    background-color: rgb(253, 253, 253);
+    position: fixed;
+    margin: 2% 10%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(31, 78, 121);
+}
+.doctor{
+    float: left;
+    background-color: rgb(248, 249, 249); 
+    width: 48%;
+    margin-right: 2%;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+.doctor h4,
+.doctor h5{
+    color: rgb(31, 78, 121);
+    margin: 10px 0 10px 10px;
+    font-weight: bold;
+
+}
+.doctor img{
+    margin: 20px 20px 50px 0;
+    border-radius: 5px;
+
+}
+.main i{
+    margin-bottom: 60px;
+    display: block;
+    width: 85%;
+    text-align: right;
+}
+.main i:hover{
+    color: rgb(140, 170, 197);
+}
+.main a{
+    text-decoration: none;
+}
+footer{
+    background-color: rgb(31, 78, 121);
+    color: white;
+    height: auto;
+    padding: 5px;
+    font-weight: bold;
+    position:absolute;
+    bottom: 2px;
+    font-size: 6px;
+    width: 100%;
+    text-align: left;
+    padding-left: 80%;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+/* css de acordiones */
+.ofrecemos{
+    float: right;
+    background-color: rgb(248, 249, 249); 
+    width: 48%;
+    display: flex;
+    align-items: flex-start ;
+}
+.acordiones{
+    background-color: rgb(31, 78, 121);
+    color: white;
+    font-weight: 200;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px; 
+    width: 100%;
+    border: none;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 10px;
+}   
+.acordion{
+    background-color: rgb(253, 253, 253);
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(31, 78, 121);
+}
+.acordion p{
+    font-size: 12px;
+}
+.acordion .verMas{
+    background-color: transparent;
+    border:  none;
+    color: rgb(31, 78, 121);
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    padding-top: 10px;
+}
+.acordion .masInfo{
+    display: none;
+    font-size: 10px;
+}
+/* css de nosotros */
+
+table{
+    width: 100%;
+    border-left: rgb(31, 78, 121) 5px ridge;
+}
+thead{
+    background-color: rgb(31, 78, 121);
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+thead td{
+    border-radius: 5px;
+}
+td h4{
+    width: 50%;
+    height: 30px;
+    background-color: rgb(31, 78, 121);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid rgb(248, 249, 249);
+}
+td div{
+    background-color: rgb(248, 249, 249);
+    border-radius: 0 20px;
+}
+td a{
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+tfoot{
+    background-color: rgb(248, 249, 249);
+    color: rgb(31, 78, 121);
+    text-align: right;
+    font-size: 10px; 
+    font-weight: bold;
+}
+tfoot td{
+    padding: 10px;
+    border-top: rgb(31, 78, 121) 5px ridge;
+}
+.psiquiatria, .nutricion, .radiologia, .pediatria{
+    visibility: hidden;
+}
+/* css de contacto */
+
+.contacto{
+    width: 48%;
+    float: left;
+    background-color: rgb(248, 249, 249);
+    margin-right: 1%;
+    padding: 10px;
+}
+.redes{
+    width: 48%;
+    float: right;
+    background-color: rgb(248, 249, 249)
+}
+.contacto label{
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(31, 78, 121);
+    display: block;
+}
+.contacto input,
+.contacto select,
+.contacto textarea{
+    width: 80%;
+    border-radius: 5px;
+    border: 2px solid rgb(31, 78, 121);
+    margin: 4px;
+    padding: 5px;
+}
+#enviar{
+    background-color: rgb(31, 78, 121);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 3px black;
+    font-weight: 100;
+}
+.message{
+    background-color: rgb(248, 249, 249);
+    border-radius: 3px;
+    position: absolute;
+    z-index: 3;
+    width: 250px;
+    height: 100px;
+    border: 2px solid black;
+    left: 30%;
+    top: 20%;
+    text-align: center;
+}
+.redes ul li{
+    list-style: none;
+    display: inline-flex;
+}
+.redes a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px;
+}
+.telefono{
+    background-color: rgb(31, 78, 121);
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    height: 30px;
+    padding: 5px;
+    box-shadow: 3px 3px 3px black;
+    font-weight: 100;
+}
+.telefono i{
+    font-size: 15px;
+    padding: 10px;
+}
+.facebook{
+    color: #3b5998;
+}
+.twitter{
+    color: #55acee;
+}
+.instagran{
+    color: #125688;
+}
+.youtube{
+    color: #bb0000;
+}
+.whatsapp{
+    color: #4dc247;
+}
+/* css pedir hora */
+.pasos{
+    width: 60%;
+    margin: 0 auto 50px auto;
+    display: flex;
+    padding: auto;
+}
+.paso{
+    background-color: rgb(31, 78, 121);
+    color: white;
+    font-size: 25px;
+    width: 20%;
+    border-radius: 30%;
+    text-align: center;
+    font-weight: bold;
+    border: 5px solid rgb(140, 170, 197);
+}
+.raya{
+    width: 20%;
+    height: 10px;
+    margin-top: 10px;
+    background-color:rgb(31, 78, 121) ;
+    font-size: 25px;
+}
+.paso1{
+    color: rgb(31, 78, 121);
+    background-color: rgb(140, 170, 197); 
+    font-size: 25px;
+    width: 20%;
+    border-radius: 30%;
+    text-align: center;
+    font-weight: bold;
+    border: 5px solid rgb(31, 78, 121);
+}
+.pasos a{
+    text-decoration: none;
+    color: white;
+}
+.afiliado{
+    margin: auto;
+    border: 2px solid rgb(140, 170, 197);
+    width: 20%;
+    padding-left: 10%;
+}
+/* css inicir sesion o afiliarse */
+
+.active{
+    color: rgb(140, 170, 197);
+}
+.card{
+    background-color: rgb(253, 253, 253);
+    height: 350px;
+    margin: auto;
+    width: 50%;
+    position: relative;
+}
+.usuario{
+    width: 100%;
+    background-color: rebeccapurple;
+    /* z-index: 3; */
+    position: absolute;
+    height: 350px;
+    visibility: hidden;
+}
+.frente{
+    width: 100%;
+    background-color: rgb(248, 249, 249);
+    z-index: 1;
+    position: absolute;
+    visibility: hidden;
+}
+.atras{
+    width: 100%;
+    background-color: rgb(248, 249, 249);
+    z-index: 2;
+    position: absolute;
+    visibility: hidden;
+}
+.card label{
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(31, 78, 121);
+    display: block;
+}
+.card input{
+    width: 80%;
+    border-radius: 5px;
+    border: 2px solid rgb(31, 78, 121);
+    margin: 4px;
+    padding: 5px;
+}
+.card button{
+    width: 30%;
+    background-color: rgb(31, 78, 121);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+}
+.card p{
+    text-align: center;
+}
+.card i{
+    text-align: center;
+    margin: auto;
+}
+/*css de opciones de usuario*/
+.opciones{
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: rgb(31, 78, 121);
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+    visibility: hidden;
+    border-radius: 5px;
+}
+.opciones ul{
+    margin: 0;
+    padding: 0;
+}
+.opciones ul li{
+    list-style: none;
+    padding: 2px;
+}
+.opciones ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+}
+.boton{
+    background-color: transparent;
+    border: none;
+}
+/*css areas */
+.lateral{
+    background-color: rgb(31, 78, 121);
+    width: 30px;
+    height: 1000px;
+    position: absolute;
+}
+.flex{
+    display: flex;
+}
+/*css areas*/
+.azulito,
+.verde,
+.naranja,
+.rojo{
+    background-color: rgb(253, 253, 253);
+    width: 25%;
+    margin: 5px;
+    text-align: center;
+    border: 1px solid rgb(31, 78, 121);
+    padding: 0;
+    border-radius: 5px;
+}
+.azulito h3{
+    background-color: lightseagreen;
+    color: white;
+    position: relative;
+    margin: 0;
+    padding: 10px;
+}
+.verde h3{ 
+    background-color: green;
+    color: white;
+    position: relative;
+    margin: 0;
+    padding: 10px;
+}
+.naranja h3{
+    background-color: orange;
+    color: white;
+    position: relative;
+    margin: 0;
+    padding: 10px;
+}
+.rojo h3{
+    background-color: red;
+    color:white;
+    position: relative;
+    margin: 0;
+    padding: 10px;
+}
+.flex img{
+    margin: 20px 0 10px 0;
+    border-radius: 10px;
+}
+.magenta{
+    width: 12%;
+}
+.flex button{
+    background-color: transparent;
+    border: none;
+    float: right;
+    color: rgb(31, 78, 121);
+    cursor: pointer;
+}
+.estadisticas,
+.productividad,
+.personal,
+.ingresos,
+.afiliados,
+.buscar,
+.editar,
+.informes,
+.pacientes,
+.hoy,
+.estadisticasMedico,
+.productividadMedico,
+.agendaMedico,
+.consultorioVirtual,
+.pedirHora,
+.pago,
+.historial,
+.horasPendientes,
+.afiliacionUsuario{
+    color: rgb(31, 78, 121);
+    text-align: center;
+    font-weight: bold;
+    padding: 0 50px;
+}

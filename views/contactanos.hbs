@@ -1,0 +1,42 @@
+<main data-aos="zoom-in-down" data-aos-duration="2000">
+    <div class="main">
+        <div class="contacto">
+            <form action="/contactanos" method="post" class="formulario" id="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="usuario@email.com">
+                <label for="telefono">Telefono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="123456789">
+                <label for="asunto">Asunto</label>
+                <select name="asunto" id="asunto">
+                    <option value="Quiero Trabajar con ustedes">Quiero Trabajar con ustedes</option>
+                    <option value="Quejas o Sugerencias">Quejas o Sugerencias</option>
+                    <option value="Otro">Otro</option>
+                </select>
+                <label for="adjunto">Adjunta tu Curriculo en pdf</label>
+                <input type="file" name="adjunto" id="adjunto">
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="5"></textarea>
+                <button type="submit" name="enviar" id="enviar">Enviar</button>
+            </form>
+            <div  class="{{#if enviado}}message{{/if}}"><h2>{{message1}}</h2>
+            <h6>{{message2}}</h6>
+            </div>
+        </div>
+        <div class="redes">
+            <h1>Otras formas de Contactarnos</h1>
+            <div class="telefono">
+                <i class="fas fa-phone-alt">+56225040</i>
+            </div>
+            <ul>
+                <li><a href=""><i class="fab fa-facebook-square fa-2x facebook"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter-square fa-2x twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-whatsapp-square fa-2x whatsapp"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram-square fa-2x instagran"></i></a></li>
+                <li><a href=""><i class="fab fa-youtube fa-2x youtube"></i></a></li>
+            </ul>
+        </div>
+
+    </div>
+</main>
